@@ -1,0 +1,16 @@
+<br/>
+
+  <div class="my-3 p-3 bg-white rounded box-shadow">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+     <main role="main" class="inner cover">
+        <span style="font:  bold; color: #4374D9;">
+        <h2 class="cover-heading"><%= @content.nickname %> </h2>(<small><%=@content.ip_address%></small>)
+        <br/>
+        </span>
+        <div class="text-center">
+            <p class="lead">" <%= @content.contents %> "</p> <br/>
+            <a href='/tweet'>List</a>
+      </main>
+      </div>
+
+</div>

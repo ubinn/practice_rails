@@ -1,0 +1,19 @@
+<div class="container">
+    <form action="/tweet/create" method="POST">
+        <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+        
+        <div class="col-4">
+        nickname
+        <input class="form-control mr-sm-2" type="text" placeholder="닉네임" name="nickname" required>
+        </div>
+        <div class="col">
+        content
+        <input class="form-control" type="text" name="content" placeholder="내용을 입력하세요.">
+        </div>
+        <br/>
+        <div class="form-row">
+            <div class="col-5"><input type="hidden"></div>
+            <input class="btn btn-primary" type="submit" value="등록">
+        </div>
+    </form>
+</div>
